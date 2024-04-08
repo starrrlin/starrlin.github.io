@@ -1,0 +1,48 @@
+
+$uchicago-maroon: #800000;
+$uchicago-dark-grey: #767676; 
+$uchicago-light-grey: #D6D6CE;
+$white: #FFFFFF;
+$black: #000000;
+$font-stack: Helvetica, sans-serif;
+$std-margin-left: 15px;
+
+h1 {
+  margin-left: $std-margin-left;
+  color: $black;
+}
+
+h3 {
+  margin-left: $std-margin-left;
+  color: $uchicago-dark-grey;
+}
+
+.navbar {
+  background-color: $uchicago-maroon;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-right: 1.2rem;
+      a {
+        text-decoration: none;
+        color: $uchicago-light-grey;
+        font-family: $font-stack;
+        &:hover { 
+          color: $uchicago-dark-grey;
+        }
+        &.active, &.bold {
+          color: #FFFFFF;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
